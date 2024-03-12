@@ -11,18 +11,22 @@
     @vite('resources/css/app.css')
 </head>
 <body class="flex flex-col min-h-screen">
+
+    
     <!-- Navegación Superior -->
     <nav class="p-4 flex items-center justify-center z-10 transition-all duration-500" style="background-color: #0BE678">
         <h1 class="text-white text-xl font-semibold">Macuin Dashboard</h1>
         
         <div class="fixed right-4">
-            <button class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+            <button id="openMessageModalButton" class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
                 <i class="material-icons">chat</i>  
             </button>
     
-            <button class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+            <button id="openModalButton" class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
                 <i class="material-icons">person</i>  
             </button>
+
+            
         </div>
     </nav>
 
@@ -58,55 +62,6 @@
                     </ul>
                 </li>
 
-                {{-- Pestana Usuarios --}}
-                <li class="opcion-con-desplegable">
-                    <div class="flex items-center justify-between p-2 hover:bg-gray-700">
-                        <div class="flex items-center">
-                            <i class="material-icons">person</i>
-                            <span>Usuarios</span>
-                        </div>
-                        <i class="fas fa-chevron-down text-xs"></i>
-                    </div>
-                    <ul class="desplegable ml-4">
-                        <li>
-                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
-                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Cliente 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
-                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Auxiliar de soporte
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                {{-- Pestana departamento --}}
-                <li class="opcion-con-desplegable">
-                    <div class="flex items-center justify-between p-2 hover:bg-gray-700">
-                        <div class="flex items-center">
-                            <i class="material-icons">people</i>
-                            <span>Departamento</span>
-                        </div>
-                        <i class="fas fa-chevron-down text-xs"></i>
-                    </div>
-                    <ul class="desplegable ml-4">
-                        <li>
-                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
-                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Ventas
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
-                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Produccion
-                            </a>
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </nav>
     </aside>

@@ -4,37 +4,41 @@
 
 @section('contenido')
 
+@include('partials.modal_perfil')
+
+@include('partials.modal_mensaje')
+
+
+
+
+
 
 <!-- component -->
 <body class="antialiased font-sans bg-gray-200">
     <div class="container mx-auto px-4 sm:px-8">
         <div class="py-8">
           
-            <div class="my-2 flex sm:flex-row flex-col">
-               
-                <div class="block relative">
-                    <span class="h-full absolute inset-y-0 left-0 flex items-center pl-2">
-                        <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current text-gray-500">
-                            <path
-                                d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1114.32 4.906l5.387 5.387a1 1 0 01-1.414 1.414l-5.387-5.387A8 8 0 012 10z">
-                            </path>
-                        </svg>
-                    </span>
-                   
-                     <div class="flex">
-                        <input placeholder="Buscar"
-                        
-                        class="appearance-none rounded-r rounded-l sm:rounded-l-none border border-gray-400 border-b block pl-8 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none" />
+        <div class="my-2 flex sm:flex-row flex-col">
+    <div class="block relative">
+        <div class="flex">
+            <input placeholder="Buscar"
+                class="appearance-none rounded-l border block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
 
-                        <button class="top-4 left-4 text-white bg-green-400 transition-colors rounded m-1 p-1 focus:outline-none z-20">
-                            <i class="material-icons">add_circle</i>  
-                        </button>
+            <button id="openAddTicketModalButton" class="top-4 right-4 text-white bg-green-400 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+                <i class="material-icons">add_circle</i>  
+            </button>
+        </div>
+        <span class="h-full absolute inset-y-0 right-0 flex items-center pr-2">
+            <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current text-gray-500">
+                <path
+                    d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1114.32 4.906l5.387 5.387a1 1 0 01-1.414 1.414l-5.387-5.387A8 8 0 012 10z">
+                </path>
+            </svg>
+        </span>
+    </div>
+</div>
 
-                     </div>
 
-                    
-                </div>
-            </div>
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                 <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
                     <table class="min-w-full leading-normal">
@@ -73,7 +77,7 @@
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     
-                                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
+                                    <button id="openDeleteModalButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -97,6 +101,13 @@
             </div>
         </div>
     </div>
+
+    @include('partials.modal_agregar')
+
+    @include('partials.modal_eliminar')
+
+  
 </body>
+
 
 @endsection
