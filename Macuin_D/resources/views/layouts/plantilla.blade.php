@@ -44,15 +44,15 @@
                     </div>
                     <ul class="desplegable ml-4">
                         <li>
-                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
+                            <a href="/" class="block p-2 hover:bg-gray-700 flex items-center">
                                 <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Gestion de citas
+                                Tickets
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
+                            <a href="/tckCancelados" class="block p-2 hover:bg-gray-700 flex items-center">
                                 <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Polizas
+                                Tickets Cancelados
                             </a>
                         </li>
                     </ul>
@@ -77,7 +77,7 @@
                         <li>
                             <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
                                 <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Gast
+                                Auxiliar de soporte
                             </a>
                         </li>
                     </ul>
@@ -96,13 +96,13 @@
                         <li>
                             <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
                                 <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Presupuestos
+                                Ventas
                             </a>
                         </li>
                         <li>
                             <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
                                 <i class="fas fa-chevron-right mr-2 text-xs"></i>
-                                Informe médico
+                                Produccion
                             </a>
                         </li>
                     </ul>
