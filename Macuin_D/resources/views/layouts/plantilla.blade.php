@@ -12,14 +12,24 @@
 </head>
 <body class="flex flex-col min-h-screen">
     <!-- Navegación Superior -->
-    <nav class="bg-teal-400 p-4 flex items-center justify-center z-10 transition-all duration-500">
+    <nav class="p-4 flex items-center justify-center z-10 transition-all duration-500" style="background-color: #0BE678">
         <h1 class="text-white text-xl font-semibold">Macuin Dashboard</h1>
+        
+        <div class="fixed right-4">
+            <button class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+                <i class="material-icons">chat</i>  
+            </button>
+    
+            <button class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+                <i class="material-icons">person</i>  
+            </button>
+        </div>
     </nav>
 
     <!-- Navegación lateral -->
     <aside class="text-white w-64 min-h-screen p-4 fixed top-0 left-0 bottom-0 bg-black z-10 transition-all duration-500 hidden">
-        <button id="toggleSidebarClose" class="absolute top-4 right-4 text-white bg-teal-400 hover:bg-teal-500 transition-colors rounded m-1 p-1 focus:outline-none z-20">
-            <i class="material-icons">close</i>  
+        <button id="toggleSidebarClose" class="absolute top-4 right-4 text-white bg-green-400 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+            <i class="material-icons">menu</i>  
         </button>
         <nav>
             <ul class="space-y-2">
@@ -102,7 +112,7 @@
     </aside>
 
     <!-- Botón de menú -->
-    <button id="toggleSidebarOpen" class="fixed  text-white bg-teal-400 hover:bg-blue-500 transition-colors focus:outline-none rounded p-1 m-1 z-20">
+    <button id="toggleSidebarOpen" class="fixed top-2 text-white hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
         <i class="material-icons">menu</i>  
     </button>
 
@@ -112,7 +122,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-light py-2 bg-green-400 transition-all duration-500" style="margin-left: 0;">
+    <footer class="text-light py-2 transition-all duration-500" style="margin-left: 0; background-color: #0BE678">
         <div class="container text-center">
             <p class="mb-0">Macuin Dashboards &copy; {{ date('d/m/Y') }}</p>
         </div>
