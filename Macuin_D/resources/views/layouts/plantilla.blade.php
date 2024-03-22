@@ -14,10 +14,10 @@
 
     
     <!-- Navegación Superior -->
-    <nav class="p-4 flex items-center justify-center z-10 transition-all duration-500" style="background-color: #0BE678">
-        <h1 class="text-white text-xl font-semibold">Macuin Dashboard</h1>
+    <nav class="p-6 flex items-center justify-center z-10 transition-all duration-500" style="background-color: #0BE678">
+        <h1 class="text-white text-3xl font-serif">Macuin Dashboard</h1>
         
-        <div class="fixed right-4">
+        <div class="fixed right-4 flex items-center justify-center">
             <button id="openMessageModalButton" class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
                 <i class="material-icons">chat</i>  
             </button>
@@ -32,15 +32,17 @@
 
     <!-- Navegación lateral -->
     <aside class="text-white w-64 min-h-screen p-4 fixed top-0 left-0 bottom-0 bg-black z-10 transition-all duration-500 hidden">
+        
         <button id="toggleSidebarClose" class="absolute top-4 right-4 text-white bg-green-400 transition-colors rounded m-1 p-1 focus:outline-none z-20">
             <i class="material-icons">menu</i>  
         </button>
+        
         <nav>
             <ul class="space-y-2">
                 {{-- Pestana tickets --}}
                 <li class="opcion-con-desplegable">
                     <div class="flex items-center justify-between p-2 hover:bg-gray-700">
-                        <div class="flex items-center">
+                        <div class="flex items-center font-serif">
                             <i class="material-icons">receipt_long</i>
                             <span>Ticket</span>
                         </div>
@@ -48,13 +50,13 @@
                     </div>
                     <ul class="desplegable ml-4">
                         <li>
-                            <a href="/" class="block p-2 hover:bg-gray-700 flex items-center">
+                            <a href="/" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
                                 <i class="fas fa-chevron-right mr-2 text-xs"></i>
                                 Tickets
                             </a>
                         </li>
                         <li>
-                            <a href="/tckCancelados" class="block p-2 hover:bg-gray-700 flex items-center">
+                            <a href="/tckCancelados" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
                                 <i class="fas fa-chevron-right mr-2 text-xs"></i>
                                 Tickets Cancelados
                             </a>
@@ -66,10 +68,13 @@
         </nav>
     </aside>
 
+    <div class="items-center justify-center">
     <!-- Botón de menú -->
-    <button id="toggleSidebarOpen" class="fixed top-2 text-white hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+    <button id="toggleSidebarOpen" class="fixed top-5 text-white hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
         <i class="material-icons">menu</i>  
     </button>
+    </div>
+    
 
     <!-- Contenedor principal -->
     <main class="flex-1 transition-all duration-500" style="margin-left: 0;">

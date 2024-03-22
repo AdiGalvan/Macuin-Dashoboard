@@ -13,7 +13,7 @@
   <div id="addTicketModal" class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
     <div class="bg-white rounded-lg p-8 max-w-md mx-auto">
       <!-- Título -->
-      <h1 class="text-2xl font-bold text-center mb-4">Agregar Ticket</h1>
+      <h1 class="text-2xl font-serif text-center mb-4">Agregar Ticket</h1>
       <!-- Formulario de agregar ticket -->
       <form class="flex flex-col space-y-4">
         <!-- Número de Ticket -->
@@ -54,7 +54,7 @@
         <!-- Botones de acción -->
         <div class="flex justify-between">
           <!-- Botón Aceptar -->
-          <button id="openConfirmationModalButton" type="submit" class="custom-button text-white font-bold py-2 px-4 rounded">
+          <button id="acceptAddTicketButton"  type="button" class="custom-button text-white font-bold py-2 px-4 rounded">
             Aceptar
           </button>
           <!-- Botón Cancelar -->
@@ -73,20 +73,42 @@
     const addTicketModal = document.getElementById('addTicketModal');
     // Acceder al botón de cancelar agregar ticket
     const cancelAddTicketButton = document.getElementById('cancelAddTicketButton');
-
+    // Acceder al botón de aceptar dentro del modal de agregar ticket
+    const acceptAddTicketButton = document.getElementById('acceptAddTicketButton');
+  
     // Función para mostrar el modal de agregar ticket
     function openAddTicketModal() {
       addTicketModal.classList.remove('hidden');
     }
-
+  
     // Función para cerrar el modal de agregar ticket
     function closeAddTicketModal() {
       addTicketModal.classList.add('hidden');
     }
-
+  
+    // Función para mostrar el SweetAlert de confirmación
+    function showConfirmationAlert() {
+      Swal.fire({
+      title: 'Confirmación',
+      text: 'Ticket agregado correctamente',
+      icon: 'success',
+      confirmButtonText: 'Ok',
+      timerProgressBar: true, // barra de progreso
+      allowOutsideClick: false, // no permitir cerrar el alert haciendo clic fuera
+      allowEscapeKey: false // no permitir cerrar el alert usando la tecla "Esc"
+  });
+          
+          closeAddTicketModal(); // Cerrar el modal después de agregar el ticket
+    }
+  
     // Evento al hacer clic en el botón de abrir el modal de agregar ticket
     openAddTicketModalButton.addEventListener('click', openAddTicketModal);
+  
     // Evento al hacer clic en el botón de cancelar agregar ticket
     cancelAddTicketButton.addEventListener('click', closeAddTicketModal);
+  
+    // Evento al hacer clic en el botón de aceptar dentro del modal de agregar ticket
+    acceptAddTicketButton.addEventListener('click', showConfirmationAlert);
+  
   </script>
-
+  
