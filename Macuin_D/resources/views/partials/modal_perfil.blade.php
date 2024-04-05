@@ -15,7 +15,7 @@
   <h1 class="text-4xl font-bold text-center text-white mb-2" style="font-family: 'Arial', sans-serif;">Perfil</h1>
  <!-- Campo de la fotografía -->
 <div class="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full bg-gray-300 flex items-center justify-center">
-  <img src="/public/images/imagen1.jpg" alt="Foto de perfil" style="width: 100px; height: 70px;">
+  <img src="/public/images/img2.webp" alt="Foto de perfil" style="width: 100px; height: 70px;">
 </div>
 
 

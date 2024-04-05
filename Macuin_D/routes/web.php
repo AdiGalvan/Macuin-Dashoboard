@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'GestionTickets');
 Route::view('/tckCancelados', 'TicketsCancelados');
+Route::view('/tckAsignados', 'TicketsAsignados');
+Route::view('/tckMensajes', 'Mensajes');
+
+
 
 
 

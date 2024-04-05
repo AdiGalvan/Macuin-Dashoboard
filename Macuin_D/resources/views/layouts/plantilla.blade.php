@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen bg-blue-100">
 
     
     <!-- Navegación Superior -->
@@ -51,14 +51,24 @@
                     <ul class="desplegable ml-4">
                         <li>
                             <a href="/" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
-                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
                                 Tickets
                             </a>
                         </li>
                         <li>
                             <a href="/tckCancelados" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
-                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
                                 Tickets Cancelados
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/tckAsignados" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
+                                Tickets Asignados
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/tckMensajes" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
+                                Mensajes
                             </a>
                         </li>
                     </ul>

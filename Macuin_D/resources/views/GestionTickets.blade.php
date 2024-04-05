@@ -25,10 +25,14 @@
           
         <div class="flex justify-between mb-4">
             <!-- Input de buscar a la izquierda -->
-            <div class="my-2">
-                <input placeholder="Buscar" class="rounded-full border-gray-300 border w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-500" />
+            <div class="flex items-center">
+                <div class="relative flex items-stretch w-full">
+                    <input id="buscar-ticket" placeholder="Buscar" class="rounded-full border-gray-300 border w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-500" />
+                    <button class=" absolute right-0 top-0 bottom-0  px-2 text-gray-900 hover:text-green-700">
+                        <i class="material-icons mt-2">search</i>
+                    </button>
+                </div>
             </div>
-        
             <!-- Botón Agregar a la derecha -->
             <div class="my-2 flex items-center justify-center font-serif">
                 <button id="openAddTicketModalButton" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition-colors flex items-center">
@@ -78,7 +82,7 @@
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     
-                                    <button id="openCancelModalButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
+                                    <button id="openCancelModalButton" class=" hover:text-red-800 text-red-600"><i class="material-icons mr-1">delete</i></button>
                                 </td>
                             </tr>
 
@@ -97,7 +101,7 @@
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     
-                                    <button id="openCancelModalButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
+                                    <button id="openCancelModalButton" class=" hover:text-red-800 text-red-600"><i class="material-icons mr-1">delete</i></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -108,12 +112,12 @@
                        
                         <div class="inline-flex mt-2 xs:mt-0">
                             <button
-                                class="text-sm bg-blue-950 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-l">
-                                Anterior 
+                                class="flex items-center  bg-blue-950 hover:bg-green-600 text-white  px-5 rounded-l">
+                                <i class="material-icons mr-1">arrow_back</i>
                             </button>
                             <button
-                                class="text-sm bg-blue-950 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-r">
-                                Siguente
+                                class="flex items-center  bg-blue-950 hover:bg-green-600 text-white  px-5 rounded-r">
+                                <i class="material-icons mr-1">arrow_forward</i>
                             </button>
                         </div>
                     </div>
