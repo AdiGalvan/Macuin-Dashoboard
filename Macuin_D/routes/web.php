@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('inicio');
+// });
+
+Route::view('/', 'GestionTickets');
+Route::view('/tckCancelados', 'TicketsCancelados');
+Route::view('/tckAsignados', 'TicketsAsignados');
+Route::view('/tckMensajes', 'Mensajes');
+
+
+
+
+
