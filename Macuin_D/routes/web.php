@@ -21,7 +21,8 @@ Route::view('/', 'GestionTickets');
 Route::view('/tckCancelados', 'TicketsCancelados');
 Route::view('/tckAsignados', 'TicketsAsignados');
 Route::view('/tckMensajes', 'Mensajes');
-
+Route::view('/RegUsuario', 'RegistroUsuario');
+Route::view('/RegDepa', 'RegistroDepartamento');
 
 
 
