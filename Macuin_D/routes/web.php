@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('inicio');
 // });
 
+<<<<<<< Updated upstream
 Route::view('/', 'Login');
 Route::view('/tckGestion', 'GestionTickets');
 Route::view('/tckConsultar', 'consultarTickets');
@@ -27,6 +28,20 @@ Route::view('/tckMensajes', 'Mensajes');
 
 
 
+=======
+Route::view('/', '/Tickets_Auxiliar/TicketsAuxiliar');
+Route::view('/tckCancelados', 'TicketsCancelados');
+Route::view('/cambio_estatus', '/Tickets_Auxiliar/TicketsAuxiliar');
+
+
+
+Route::get('/Tickets_Jefe/generar_pdf', [pdfController::class, 'generarPDF'])->name('Tickets_Jefe.generar_pdf');
+
+
+
+// Route::view('/', 'GestionTickets');
+// Route::view('/tckCancelados', 'TicketsCancelados');
+>>>>>>> Stashed changes
 
 
 
