@@ -1,4 +1,3 @@
-
 <style>
   /* Estilo personalizado para los botones */
   .custom-button {
@@ -65,41 +64,67 @@
     overflow: hidden; /* Ocultar las partes de la imagen que sobresalen del círculo */
   }
 
+  /* Estilo para los campos de información */
+  .info-field {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .info-field input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .info-field i {
+    margin-right: 8px;
+    color: #666;
+  }
 </style>
-
-
 
 <!-- Modal -->
 <div id="userProfileModal">
   <div class="modal-contenido" onclick="event.stopPropagation()">
     <!-- Imagen del perfil -->
     <div class="profile-image">
-      <img src="https://static.vecteezy.com/system/resources/previews/032/314/084/non_2x/ai-generated-beard-guy-portrait-male-fashionable-jacket-adult-young-successful-business-confidence-caucasian-businessman-white-executive-standing-modern-studio-suit-style-men-person-attractive-handsome-free-photo.jpg" alt="Foto de perfil" style="width: 100%; height: 100%;">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/032/314/084/non_2x/ai-generated-beard-guy-portrait-male-fashionable-jacket-adult-young-successful-business-confidence-caucasian-businessman-white-executive-standing-modern-studio-suit-style-men-person-attractive-handsome-free-photo.jpg"
+        alt="Foto de perfil"
+        style="width: 100%; height: 100%"
+      />
     </div>
     <!-- Contenedor de información -->
     <div class="info-container">
       <button class="close-button" onclick="closeUserProfileModal()">X</button>
-      <h1 class="text-4xl font-bold mb-2" style="font-family: 'Arial', sans-serif;">Perfil</h1>
+      <h1 class="text-4xl font-bold mb-2" style="font-family: 'Arial', sans-serif">Perfil</h1>
       <!-- Nombre -->
-      <h2 class="text-xl font-bold mb-4" style="font-family: 'Arial', sans-serif;">John Doe</h2>
+      <h2 class="text-xl font-bold mb-4" style="font-family: 'Arial', sans-serif">John Doe</h2>
       <!-- Campos de información -->
       <!-- Campo Teléfono -->
-      <div class="rounded bg-gray-300 text-center mb-2 py-2 px-6 text-gray-800">
-        +1 (555) 123-4567
+      <div class="info-field">
+        <i class="fas fa-phone"></i>
+        <input type="text" value="+1 (555) 123-4567" placeholder="Teléfono" />
       </div>
       <!-- Campo Correo Electrónico -->
-      <div class="rounded bg-gray-300 text-center mb-2 py-2 px-6 text-gray-800">
-        johndoe@example.com
+      <div class="info-field">
+        <i class="fas fa-envelope"></i>
+        <input type="email" value="johndoe@example.com" placeholder="Correo Electrónico" />
       </div>
       <!-- Campo WhatsApp -->
-      <div class="rounded bg-gray-300 text-center mb-4 py-2 px-6 text-gray-800">
-        911
+      <div class="info-field">
+        <i class="fab fa-whatsapp"></i>
+        <input type="text" value="911" placeholder="WhatsApp" />
       </div>
     </div>
   </div>
 </div>
-
-
 
 <script>
   // Función para abrir el modal de perfil

@@ -12,7 +12,7 @@
 @include('partials.modal_comentario')
 
 <body class="antialiased font-sans bg-gray-200">
-    <h1 class="text-center text-4xl font-serif mt-8 mb-4">Tickets Asignados</h1>
+    <h1 class="text-center text-4xl font-serif mt-8 mb-4">Asignación de Tickets</h1>
     <div class="container mx-auto px-4 sm:px-8">
         <div class="py-8">
             <!-- Mover el div del input de búsqueda y agregar la etiqueta -->

@@ -8,7 +8,7 @@
 
     <body class="antialiased font-sans bg-gray-200">
 
-        <h1 class="text-center text-4xl font-serif mt-8 mb-4">Registro de Usuarios</h1>
+        <h1 class="text-center text-4xl font-serif mt-8 mb-4">Registro de Departamento</h1>
 
         <div class="container mx-auto px-4 sm:px-8">
 
