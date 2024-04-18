@@ -24,24 +24,25 @@
    
           
         <div class="flex justify-between mb-4">
-            <!-- Input de buscar a la izquierda -->
+            <!-- Botón Agregar a la izquierda -->
+            <div class="my-2 flex items-center font-serif">
+                <button onclick="openModal()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition-colors flex items-center">
+                    <i class="material-icons mr-1">add_circle</i>
+                    Añadir Ticket
+                </button>
+            </div>
+            <!-- Input de buscar a la derecha -->
             <div class="flex items-center">
                 <div class="relative flex items-stretch w-full">
+                    <label style="display: block; width: 60%;" class="font-serif mt-3">Buscar Ticket</label>
                     <input id="buscar-ticket" placeholder="Buscar" class="rounded-full border-gray-300 border w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-500" />
                     <button class=" absolute right-0 top-0 bottom-0  px-2 text-gray-900 hover:text-green-700">
                         <i class="material-icons mt-2">search</i>
                     </button>
                 </div>
             </div>
-            <!-- Botón Agregar a la derecha -->
-            <div class="my-2 flex items-center justify-center font-serif">
-                <button id="openAddTicketModalButton" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition-colors flex items-center">
-                    <i class="material-icons mr-1">add_circle</i>
-                    Añadir Ticket
-                </button>
-            </div>
-            
         </div>
+        
 
 
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
@@ -82,7 +83,7 @@
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     
-                                    <button id="openCancelModalButton" class=" hover:text-red-800 text-red-600"><i class="material-icons mr-1">delete</i></button>
+                                    <button id="openCancelModalButton" class=" hover:text-red-800 text-red-600"><i class="material-icons text-3xl">delete</i></button>
                                 </td>
                             </tr>
 
@@ -101,25 +102,30 @@
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     
-                                    <button id="openCancelModalButton" class=" hover:text-red-800 text-red-600"><i class="material-icons mr-1">delete</i></button>
+                                    <button id="openCancelModalButton" class=" hover:text-red-800 text-red-600"><i class="material-icons text-3xl">delete</i></button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <div
-                        class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
-                       
-                        <div class="inline-flex mt-2 xs:mt-0">
-                            <button
-                                class="flex items-center  bg-blue-950 hover:bg-green-600 text-white  px-5 rounded-l">
-                                <i class="material-icons mr-1">arrow_back</i>
-                            </button>
-                            <button
-                                class="flex items-center  bg-blue-950 hover:bg-green-600 text-white  px-5 rounded-r">
-                                <i class="material-icons mr-1">arrow_forward</i>
-                            </button>
-                        </div>
+                    <div class="flex justify-center p-5">
+                        <nav class="flex space-x-2" aria-label="Pagination">
+                            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm bg-blue-400 text-white font-semibold rounded-md focus:border-blue-300">
+                                Previous
+                            </a>
+                            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border cursor-pointer leading-5 rounded-md transition duration-150 ease-in-out focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10">
+                                1
+                            </a>
+                            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border cursor-pointer leading-5 rounded-md transition duration-150 ease-in-out focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10">
+                                2
+                            </a>
+                            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border cursor-pointer leading-5 rounded-md transition duration-150 ease-in-out focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10">
+                                3
+                            </a>
+                            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm  bg-blue-400 text-white font-semibold rounded-md focus:border-blue-300">
+                                Next
+                            </a>
+                        </nav>
                     </div>
                 </div>
             </div>

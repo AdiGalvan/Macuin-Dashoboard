@@ -19,7 +19,7 @@
             <!-- Ejemplo de mensaje recibido -->
             <div class="bg-white rounded-lg shadow-md p-6 flex items-center">
                 <div class="justify-start rounded-full mr-4">
-                    <i class="material-icons text-green-600 text-xl">chat</i>
+                    <i class="material-icons text-green-600 text-2xl">chat</i>
                 </div>
                 <div>
                     <h2 class="text-lg font-semibold text-gray-800">Jefe de Soporte</h2>
@@ -29,7 +29,17 @@
             </div>
             <div class="bg-white rounded-lg shadow-md p-6 flex items-center">
                 <div class="justify-start rounded-full mr-4">
-                    <i class="material-icons text-green-600 text-xl">chat</i>
+                    <i class="material-icons text-green-600 text-2xl">chat</i>
+                </div>
+                <div>
+                    <h2 class="text-lg font-semibold text-gray-800">Auxiliar de Soporte</h2>
+                    <p class="text-sm text-gray-600">22/05/24</p>
+                    <p class="text-gray-700 mt-2">Tickets asignados correctamente.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 flex items-center">
+                <div class="justify-start rounded-full mr-4">
+                    <i class="material-icons text-green-600 text-2xl">chat</i>
                 </div>
                 <div>
                     <h2 class="text-lg font-semibold text-gray-800">Jefe de Soporte</h2>
@@ -39,37 +49,27 @@
             </div>
             <div class="bg-white rounded-lg shadow-md p-6 flex items-center">
                 <div class="justify-start rounded-full mr-4">
-                    <i class="material-icons text-green-600 text-xl">chat</i>
+                    <i class="material-icons text-green-600 text-2xl">chat</i>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-gray-800">Jefe de Soporte</h2>
+                    <h2 class="text-lg font-semibold text-gray-800">Auxiliar de Soporte</h2>
                     <p class="text-sm text-gray-600">22/05/24</p>
                     <p class="text-gray-700 mt-2">Tickets asignados correctamente.</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-6 flex items-center">
                 <div class="justify-start rounded-full mr-4">
-                    <i class="material-icons text-green-600 text-xl">chat</i>
+                    <i class="material-icons text-green-600 text-2xl">chat</i>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-gray-800">Jefe de Soporte</h2>
+                    <h2 class="text-lg font-semibold text-gray-800">Auxiliar de Soporte</h2>
                     <p class="text-sm text-gray-600">22/05/24</p>
                     <p class="text-gray-700 mt-2">Tickets asignados correctamente.</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md p-6 flex items-center">
                 <div class="justify-start rounded-full mr-4">
-                    <i class="material-icons text-green-600 text-xl">chat</i>
-                </div>
-                <div>
-                    <h2 class="text-lg font-semibold text-gray-800">Jefe de Soporte</h2>
-                    <p class="text-sm text-gray-600">22/05/24</p>
-                    <p class="text-gray-700 mt-2">Tickets asignados correctamente.</p>
-                </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6 flex items-center">
-                <div class="justify-start rounded-full mr-4">
-                    <i class="material-icons text-green-600 text-xl">chat</i>
+                    <i class="material-icons text-green-600 text-2xl">chat</i>
                 </div>
                 <div>
                     <h2 class="text-lg font-semibold text-gray-800">Jefe de Soporte</h2>
