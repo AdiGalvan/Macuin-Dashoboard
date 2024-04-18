@@ -17,12 +17,16 @@ use Illuminate\Support\Facades\Route;
 //     return view('inicio');
 // });
 
-Route::view('/', 'GestionTickets');
+Route::view('/', 'Login');
+Route::view('/tckGestion', 'GestionTickets');
+Route::view('/tckConsultar', 'consultarTickets');
+Route::view('/tckGestion', 'GestionTickets');
 Route::view('/tckCancelados', 'TicketsCancelados');
 Route::view('/tckAsignados', 'TicketsAsignados');
 Route::view('/tckMensajes', 'Mensajes');
 Route::view('/RegUsuario', 'RegistroUsuario');
 Route::view('/RegDepa', 'RegistroDepartamento');
+
 
 
 

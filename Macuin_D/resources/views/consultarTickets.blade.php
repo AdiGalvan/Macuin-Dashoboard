@@ -1,7 +1,7 @@
 
 @extends('layouts.plantilla')
 
-@section('titulo', 'Tickets Asignados')
+@section('titulo', 'Consular Tickets')
 
 @section('contenido')
 
@@ -9,10 +9,13 @@
 
 @include('partials.modal_mensaje')
 
-@include('partials.modal_comentario')
+@include('partials.modal_info')
+
+
+
 
 <body class="antialiased font-sans bg-gray-200">
-    <h1 class="text-center text-4xl font-serif mt-8 mb-4">Tickets Asignados</h1>
+    <h1 class="text-center text-4xl font-serif mt-8 mb-4">Consultar Tickets</h1>
     <div class="container mx-auto px-4 sm:px-8">
         <div class="py-8">
             <!-- Mover el div del input de búsqueda y agregar la etiqueta -->
@@ -35,48 +38,38 @@
                     <table class="min-w-full leading-normal">
                         <thead>
                             <tr>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Cliente
+                                <th class="px-5 py-3 border-b-2 border-gray-400 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Departamento
                                 </th>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Auxiliar de Soporte
+                                <th class="px-5 py-3 border-b-2 border-gray-400 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Fecha
                                 </th>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Fecha de asignacion
+                                <th class="px-5 py-3 border-b-2 border-gray-400 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                    Detalles
                                 </th>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                <th class="px-5 py-3 border-b-2 border-gray-400 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                     Estatus
                                 </th>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Comentario
-                                </th>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Ticket
-                                </th>
-                            </tr>
+                                
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                   Juan Perez
-                                </td>
-                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                  Carlos Rodriguez
+                                   Ventas
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     12/12/2021
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    En proceso  
-                                </td>
-                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <button class="flex items-center hover:text-green-600 text-blue-500" onclick="openModal()">
-                                        <i class="material-icons text-3xl">chat</i>
+                                    <button id="infoButton" class="flex items-center hover:text-green-600 text-blue-500" onclick="openModal()">
+                                        <i class="material-icons text-3xl">info</i>
                                     </button>
+                                                                       
                                 </td>
-                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    Fallas en la red  
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm text-bg">
+                                  Pendiente
                                 </td>
+                                
                             </tr>
                         </tbody>
                     </table>
@@ -104,4 +97,6 @@
         </div>
     </div>
 </body>
+
+
 @endsection
