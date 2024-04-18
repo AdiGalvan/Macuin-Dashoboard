@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
-<body class="flex flex-col min-h-screen bg-blue-100">
+<body class="flex flex-col min-h-screen">
 
     
     <!-- Navegación Superior -->
@@ -22,7 +22,7 @@
                 <i class="material-icons">chat</i>  
             </button>
     
-            <button id="openModalButton" class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
+            <button onclick="openUserProfileModal()" class="top-4 text-white  hover:bg-blue-950 transition-colors rounded m-1 p-1 focus:outline-none z-20">
                 <i class="material-icons">person</i>  
             </button>
 
@@ -50,7 +50,7 @@
                     </div>
                     <ul class="desplegable ml-4">
                         <li>
-                            <a href="/" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
+                            <a href="/tckGestion" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
                                 Tickets
                             </a>
                         </li>
@@ -69,6 +69,11 @@
                         <li>
                             <a href="/tckMensajes" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
                                 Mensajes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tckConsultar" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
+                                Consular Tickets
                             </a>
                         </li>
                     </ul>
