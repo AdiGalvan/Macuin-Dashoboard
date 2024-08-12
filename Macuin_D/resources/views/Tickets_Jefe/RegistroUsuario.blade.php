@@ -4,6 +4,8 @@
 
 @section('contenido')
 
+@include('partials.modal_agregar')
+
 
 <body class="antialiased font-sans bg-gray-200">
 
@@ -25,9 +27,9 @@
             </div>
             <!-- Botón Agregar a la derecha -->
             <div class="my-2 flex items-center justify-center font-serif">
-                <button id="openAddTicketModalButton" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition-colors flex items-center">
+                <button type="button" id="openAddTicketModalButton" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition-colors flex items-center">
                     <i class="material-icons mr-1">add_circle</i>
-                    Añadir Ticket
+                    Añadir Usuario
                 </button>
             </div>
         </div>
@@ -142,7 +144,7 @@
         </div>
     </div>
 
-    @include('partials.modal_agregar')
+   
    
     @include('partials.modaledit')
     @include('partials.modal_eliminar')

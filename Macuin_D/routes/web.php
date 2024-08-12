@@ -17,22 +17,26 @@ use Illuminate\Support\Facades\Route;
 //     return view('inicio');
 // });
 
-<<<<<<< Updated upstream
+
 Route::view('/', 'Login');
-Route::view('/tckGestion', 'GestionTickets');
-Route::view('/tckConsultar', 'consultarTickets');
-Route::view('/tckGestion', 'GestionTickets');
-Route::view('/tckCancelados', 'TicketsCancelados');
-Route::view('/tckAsignados', 'TicketsAsignados');
-Route::view('/tckMensajes', 'Mensajes');
-Route::view('/RegUsuario', 'RegistroUsuario');
-Route::view('/RegDepa', 'RegistroDepartamento');
+Route::view('/tckGestion', '/Tickets_Cliente/GestionTickets');
+Route::view('/tckCancelados', '/Tickets_Cliente/TicketsCancelados');
 
 
-=======
-Route::view('/', '/Tickets_Auxiliar/TicketsAuxiliar');
-Route::view('/tckCancelados', 'TicketsCancelados');
-Route::view('/cambio_estatus', '/Tickets_Auxiliar/TicketsAuxiliar');
+Route::view('/tckConsultar', '/Tickets_Auxiliar/consultarTickets');
+Route::view('/tckMensajes', '/Tickets_Auxiliar/MensajesAux');
+Route::view('/tckAuxiliar', '/Tickets_Auxiliar/TicketsAuxiliar');
+
+
+Route::view('/tckAsignados', '/Tickets_Jefe/TicketsAsignados');
+Route::view('/RegUsuario', '/Tickets_Jefe/RegistroUsuario');
+Route::view('/RegDepa', '/Tickets_Jefe/RegistroDepartamento');
+Route::view('/Mensajes_Jefe', '/Tickets_Jefe/Mensajes');
+Route::view('/solicitudTck', '/Tickets_Jefe/Solicitud_Ticket');
+
+
+
+
 
 
 
@@ -42,7 +46,7 @@ Route::get('/Tickets_Jefe/generar_pdf', [pdfController::class, 'generarPDF'])->n
 
 // Route::view('/', 'GestionTickets');
 // Route::view('/tckCancelados', 'TicketsCancelados');
->>>>>>> Stashed changes
+
 
 
 

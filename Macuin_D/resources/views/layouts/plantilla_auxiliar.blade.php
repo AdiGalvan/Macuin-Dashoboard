@@ -44,45 +44,29 @@
                     <div class="flex items-center justify-between p-2 hover:bg-gray-700">
                         <div class="flex items-center font-serif">
                             <i class="material-icons">receipt_long</i>
-                            <span>Ticket Jefe de Soporte</span>
+                            <span>Ticket Auxiliar</span>
                         </div>
                         <i class="fas fa-chevron-down text-xs"></i>
                     </div>
                     <ul class="desplegable ml-4">
                         
                         <li>
-                            <a href="/tckCancelados" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
-                                Tickets Cancelados
+                            <a href="/tckAuxiliar" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
+                                Ticket Asignados
                             </a>
                         </li>
-
                         <li>
-                            <a href="/tckAsignados" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
-                                Tickets Asignados
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/Mensajes_Jefe" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
+                            <a href="/tckMensajes" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
                                 Mensajes
                             </a>
                         </li>
-                    
                         <li>
-                            <a href="/solicitudTck" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
-                                Solicitud de Ticket
+                            <a href="/tckConsultar" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
+                                Consulta de tickets
                             </a>
                         </li>
-                        <li>
-                            <a href="/RegDepa" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
-                                Registro de departamento
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/RegUsuario" class="block p-2 hover:bg-gray-700 flex items-center font-serif">
-                                Registro de Usuario
-                            </a>
-                        </li>
+                        
+
                     </ul>
                 </li>
 

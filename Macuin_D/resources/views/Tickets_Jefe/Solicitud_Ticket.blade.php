@@ -22,9 +22,10 @@
         <div class="flex justify-between mb-4">
             <div class="my-2 m-10">
                 <div class="mb-2">
-                    <button id="openGenerateTicketButton" class="bg-blue-900 hover:bg-blue-600 text-white py-2 px-3 rounded-xl transition-colors top items-center">
+                    
+                    <a href="/tckAsignados"><button id="openGenerateTicketButton" class="bg-blue-900 hover:bg-blue-600 text-white py-2 px-3 rounded-lg transition-colors top items-center">
                         Tickets asignados
-                    </button>
+                    </button></a>
                 </div>
                 <div class="mb-2">
                     <button id="GenerateTicketButton" class="bg-blue-900 hover:bg-blue-600 text-white py-2 px-3 rounded-lg transition-colors flex items-center">
@@ -150,7 +151,7 @@
                                    
                         <form action="{{ route('Tickets_Jefe.generar_pdf') }}" method="GET">
                             <button type="submit" class="btn btn-success">
-                                <i class="bi bi-file-earmark-pdf"></i> Generar PDF
+                                <i class="bi bi-file-earmark-pdf"></i>
                             </button>
                         </form>
                                 </button>

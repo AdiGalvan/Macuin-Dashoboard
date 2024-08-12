@@ -1,5 +1,5 @@
 
-@extends('layouts.plantilla')
+@extends('layouts.plantilla_auxiliar')
 
 @section('titulo', 'Consular Tickets')
 
@@ -23,7 +23,7 @@
                 <div class="flex items-center">
                     <label style="display: block; width: 50%;" class="font-serif mt-1">Buscar Ticket</label>
                     <div class="relative flex items-stretch w-full">
-                        <input id="buscar-ticket" placeholder="Buscar" class="rounded-full border-gray-300 border w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-500" />
+                        <input id="buscar-ticket" placeholder="Fecha, Estatus, Departamento" class="rounded-full border-gray-300 border w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-500" />
                         <button class=" absolute right-0 top-0 bottom-0  px-2 text-gray-900 hover:text-green-700">
                             <i class="material-icons mt-2">search</i>
                         </button>

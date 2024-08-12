@@ -1,4 +1,4 @@
-@extends('layouts.plantilla_auxiliar')
+@extends('layouts.plantilla_auxiliar') 
 
 @section('titulo', 'Gestion de tickets')
 
@@ -72,7 +72,7 @@
                                 Logística
                             </td>
                             <td class="px-5 py-2 border-b border-gray-200 bg-white text-xl ">
-                                <button id="" class=" hover:text-red-700 text-red-800 font-bold py-1 px-1 rounded">
+                                <button id="" class="pdf-button hover:text-red-700 text-red-800 font-bold py-1 px-1 rounded">
                                     <i class="material-icons">picture_as_pdf</i> 
                                 </button>
                             </td>
@@ -123,7 +123,7 @@
                                     Logistica
                                 </td>
                                 <td class="px-5 py-2 border-b border-gray-200 bg-white text-xl ">
-                                <button id="" class=" hover:text-red-700 text-red-800 font-bold py-1 px-1 rounded">
+                                <button id="pdf" class=" hover:text-red-700 text-red-800 font-bold py-1 px-1 rounded">
                                     <i class="material-icons">picture_as_pdf</i> 
                                 </button>
                                 </td>
@@ -167,7 +167,21 @@
             </div> <!-- div de class -->
     </div> <!-- div de container -->
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Selecciona todos los botones de PDF
+            const pdfButtons = document.querySelectorAll(".pdf-button");
+    
+            // Escucha el clic en cada botón de PDF
+            pdfButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    // Muestra el SweetAlert
+                    swal("PDF generado correctamente", "", "success");
+                });
+            });
+        });
+    </script>
+    
 
     @include('partials.modal_status')
 
